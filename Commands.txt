@@ -1,13 +1,51 @@
+● Create a new project on your local machine,
+then push it your remote repo.
 $ git init
 $ git add .
 $ git commit -m "LAB_2"
 $ git remote add origin git@github.com:mohamedkamalyacine/VC_Lab_2.git
 $ git branch -M main
 $ git push -u origin main
+
+● Create two branches (dev & test) then create one
+file on each branch, and push this changes to the remote repo.
 $ git branch dev
 $ git checkout dev
+$ git branch dev_1
+$ git checkout dev_1
 $ git branch -r
 $ git commit -m "Dev_Branch"
 $ git push -u origin dev
 $ git branch test
 $ git push -u origin dev
+
+● Merge this changes on Main branch and then push it to your
+remote main branch.
+$ git checkout main
+$ git merge dev
+$ git commit -m "commit for new folder"
+$ git push -u origin main
+
+● Tell me how to remove them locally and remotely.
+$ git branch -d dev_1  		(Delete branch Dev_1 Locally)
+$ git push origin :dev_1	(Delete branch Dev_1 Remotely)
+
+● Tell me how to checkout another branch without commit 
+changes 
+$ git checkout -f test
+
+● Create an annotated tag with tagname (v1.7) .
+$ git tag -a v1.7 -m "version 1.7"
+
+● Push it to the remote repository.
+$ git push origin v1.7
+
+● Tell me how to list tags.
+$ git tag
+
+● Tell me how to delete tag locally and remotely.
+$ git push origin --delete v1.7 (Delete tag Dev_1 remotely)
+$ git tag -d v1.7		(Delete tag Dev_1 Locally)
+
+● Add an image in the README.md file.
+# LAb_2![iot_devices](https://user-images.githubusercontent.com/110255978/201150467-d29993b3-8082-4d81-8e25-d82c2c6974de.png)

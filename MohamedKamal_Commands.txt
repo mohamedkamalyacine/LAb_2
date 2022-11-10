@@ -1,0 +1,25 @@
+$ git init
+$ git add .
+$ git commit -m "LAB_2"
+$ git remote add origin git@github.com:mohamedkamalyacine/VC_Lab_2.git
+$ git branch -M main
+$ git push -u origin main
+$ git branch dev
+$ git checkout dev
+$ git branch dev_1
+$ git checkout dev_1
+$ git branch -r
+$ git commit -m "Dev_Branch"
+$ git push -u origin dev
+$ git branch test
+$ git push -u origin dev
+$ git checkout main
+$ git merge dev
+$ git commit -m "commit for new folder"
+$ git push -u origin main
+$ git branch -d dev_1  		(Delete branch Dev_1 Locally)
+$ git push origin :dev_1	(Delete branch Dev_1 Remotely)
+$ git branch
+$ git tag -a v1.7 -m "version 1.7"
+$ git push origin v1.7
+$ git tag
