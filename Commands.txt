@@ -4,3 +4,10 @@ $ git commit -m "LAB_2"
 $ git remote add origin git@github.com:mohamedkamalyacine/VC_Lab_2.git
 $ git branch -M main
 $ git push -u origin main
+$ git branch dev
+$ git checkout dev
+$ git branch -r
+$ git commit -m "Dev_Branch"
+$ git push -u origin dev
+$ git branch test
+$ git push -u origin dev
